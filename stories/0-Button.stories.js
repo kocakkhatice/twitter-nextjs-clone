@@ -7,6 +7,8 @@ import Navigation from '../components/Navigation'
 import TextBody from '../components/TextBody'
 import TweetButton from '../components/TweetButton'
 import Stack from '../components/Stack'
+import ProfileBox from '../components/ProfileBox'
+
 export default {
   title: 'Button',
   component: Button
@@ -31,3 +33,4 @@ export const navButton = () => (
 export const navigationItems = () => (
   <Navigation selectedKey="home"></Navigation>
 )
+export const profileBox = () => <ProfileBox />

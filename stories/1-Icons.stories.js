@@ -1,11 +1,11 @@
-import React from "react";
-
-import * as Icons from "../components/icons";
+import React from 'react'
+import ProfilePhoto from '../components/ProfilePhoto'
+import * as Icons from '../components/icons'
 export default {
-  title: "Icons",
-};
+  title: 'Icons'
+}
 export const Icon = () => (
-  <div className= "icons">
+  <div className="icons">
     <Icons.ArrowBottom />
     <Icons.Bookmark />
     <Icons.Emoji />
@@ -34,4 +34,5 @@ export const Icon = () => (
     <Icons.Options/> 
     */}
   </div>
-);
+)
+export const profilePhoto = () => <ProfilePhoto />
