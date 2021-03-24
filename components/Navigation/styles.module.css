@@ -5,7 +5,4 @@
 }
 
 .navButton {
-  & + & {
-    margin-top: 8px;
-  }
 }

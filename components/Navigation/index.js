@@ -3,6 +3,8 @@ import { useRouter } from 'next/router'
 import NavigationButton from '../NavigationButton'
 import { MENU } from '../../constants'
 import TextTitle from '../TextTitle'
+import cn from 'classnames'
+
 import style from './styles.module.css'
 
 function Navigation({ flat = false }) {
@@ -18,7 +20,7 @@ function Navigation({ flat = false }) {
             notify={menu.notify}
             selected={selected}
             href={menu.path}
-            className={style.navButton}
+            className={cn(style.navButton, menu.key)}
           >
             {selected ? menu.iconSelected : menu.icon}
             {showTitle && <TextTitle>{menu.title}</TextTitle>}

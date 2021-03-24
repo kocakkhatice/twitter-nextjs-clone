@@ -24,8 +24,8 @@ export const MENU = [
   {
     key: 'twitter',
     path: '/',
-    icon: <Twitter style={{ fontSize: '30px', color: 'white' }} />,
-    iconSelected: <Twitter style={{ fontSize: '30px', color: 'white' }} />,
+    icon: <Twitter style={{ fontSize: '30px' }} />,
+    iconSelected: <Twitter style={{ fontSize: '30px' }} />,
     title: '',
     notify: 0
   },

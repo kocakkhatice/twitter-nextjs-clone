@@ -7,6 +7,8 @@
   align-items: center;
   transition: var(--fade);
   text-decoration: none;
+  justify-content: center;
+
   &:focus {
     outline: none;
   }
