@@ -21,3 +21,6 @@
 .fullWidth {
   width: 100% !important;
 }
+.iconButton {
+  padding: 5px;
+}
