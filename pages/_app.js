@@ -4,7 +4,13 @@ import '../styles/app.css'
 import ThemeContext from '../context'
 
 export default function MyApp({ Component, pageProps }) {
-  const [theme, themeSet] = useState(null)
+  const [theme, themeSet] = useState(() => {
+    try {
+      return localStorage.getItem('THEME')
+    } catch (error) {
+      return 'light'
+    }
+  })
 
   useEffect(() => {
     const theme = localStorage.getItem('THEME') || 'light'
