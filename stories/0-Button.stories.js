@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { withKnobs, boolean } from '@storybook/addon-knobs'
 import Button from '../components/Button'
 import NavigationButton from '../components/NavigationButton'
 import { Home } from '../components/icons'
@@ -11,7 +11,7 @@ import ProfileBox from '../components/ProfileBox'
 
 export default {
   title: 'Button',
-  component: Button
+  decorators: [withKnobs]
 }
 export const button = () => <Button>Default Button</Button>
 export const tweetButton = () => (
@@ -30,7 +30,9 @@ export const navButton = () => (
     <TextBody>Home</TextBody>
   </NavigationButton>
 )
-export const navigationItems = () => (
-  <Navigation selectedKey="home"></Navigation>
-)
+export const navigationItems = () => {
+  const flat = boolean('Flat', false)
+  return <Navigation flat={flat} />
+}
+
 export const profileBox = () => <ProfileBox />

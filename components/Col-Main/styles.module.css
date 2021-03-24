@@ -1,8 +1,5 @@
-.main{
-    border-left: 1px solid var(--c-border-color);
-}
-@media screen and (min-width: 980px){
-    .main{
-        border-right: 1px solid var(--c-border-color); 
-    }
+.main {
+  border-width: 0 1px;
+  border-style: solid;
+  border-color: var(--c-border-color);
 }
