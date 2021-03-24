@@ -2,6 +2,14 @@
   position: relative;
   padding: 20px;
   display: flex;
+
+  &:global(.twitter) {
+    color: var(--c-theme);
+
+    :global(html:not(.light)) & {
+      color: white;
+    }
+  }
 }
 .navigationButton svg {
   font-size: 26px;

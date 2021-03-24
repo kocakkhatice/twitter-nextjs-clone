@@ -10,7 +10,7 @@ function Sidebar({ flat }) {
     <div className={cn(style.sidebar)}>
       <Navigation flat={flat} />
       <div className={style.tweetButton}>
-        <TweetButton bigButton full={!flat}>
+        <TweetButton bigbutton full={!flat}>
           {flat ? 'a' : 'Tweet'}
         </TweetButton>
       </div>
