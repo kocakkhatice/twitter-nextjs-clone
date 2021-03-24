@@ -1,0 +1,20 @@
+import React from 'react'
+
+import Button from '../components/Button'
+import NavigationButton from '../components/NavigationButton'
+import { Home } from '../components/icons'
+import Navigation from '../components/Navigation'
+import TextBody from '../components/TextBody'
+
+export default {
+  title: 'Button',
+  component: Button
+}
+export const button = () => <Button>Default Button</Button>
+export const navButton = () => (
+  <NavigationButton>
+    <Home />
+    <TextBody>Home</TextBody>
+  </NavigationButton>
+)
+export const navigationItems = () => <Navigation></Navigation>

@@ -1,0 +1,9 @@
+.photo {
+    
+    flex-shrink: 0;
+}
+.photo img{
+    display: block;
+    width:100%;
+    border-radius: 99px;
+}

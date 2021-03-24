@@ -1,0 +1,22 @@
+.box{ 
+    padding: 10px; 
+ }
+ .box * {
+    display: block;
+ }
+
+ .box:hover{
+     color:var(--c-text-color)
+ }
+.info{ 
+    margin-left: 10px;
+    margin-right: 20px;
+}
+.icon{
+    margin-left:auto;
+
+}
+.slug{
+    color: var(--c-gray);
+
+}

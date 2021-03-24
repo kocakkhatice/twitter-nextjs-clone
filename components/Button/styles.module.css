@@ -1,0 +1,22 @@
+.button {
+  background-color: transparent;
+  cursor: pointer;
+  color: var(--c-text-color);
+  border-radius: 99px;
+  display: flex;
+  align-items: center;
+  transition: var(--fade);
+  a {
+    text-decoration: none;
+  }
+}
+.button:focus {
+  outline: none;
+}
+.fullWidth {
+  width: 100% !important;
+}
+.button:hover {
+  background-color: var(--c-theme-10);
+  color: var(--c-theme);
+}
