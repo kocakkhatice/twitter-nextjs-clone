@@ -3,7 +3,7 @@ import { withKnobs, boolean } from '@storybook/addon-knobs'
 import Button from '../components/Button'
 import NavigationButton from '../components/NavigationButton'
 import { Home } from '../components/icons'
-import Navigation from '../components/Navigation'
+import NavigationForStorybook from '../components/NavigationForStorybook'
 import TextBody from '../components/TextBody'
 import TweetButton from '../components/TweetButton'
 import Stack from '../components/Stack'
@@ -32,7 +32,7 @@ export const navButton = () => (
 )
 export const navigationItems = () => {
   const flat = boolean('Flat', false)
-  return <Navigation flat={flat} />
+  return <NavigationForStorybook flat={flat} />
 }
 
 export const profileBox = () => <ProfileBox />

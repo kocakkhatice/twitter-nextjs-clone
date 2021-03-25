@@ -9,16 +9,20 @@ import TweetBox from '../components/TweetBox'
 
 export default function Home() {
   //loading'i kullanmak için /api/tweets olarak değiştirilebilir.
-  const { data, error } = useSWR('/api/tweet', fetcher)
+  // const { data, error } = useSWR('/api/tweet', fetcher)
+
+  const { data, error } = useSWR(
+    'https://twitter-nextjs-f18f5-default-rtdb.firebaseio.com/user.json',
+    fetcher
+  )
   return (
     <Layout>
-      <TweetBox />
       {!data && (
         <div className={style.loading}>
           <Loading />
         </div>
       )}
-      {data?.user.map((u) => {
+      {data?.map((u) => {
         return (
           <Tweet
             key={u.name}
