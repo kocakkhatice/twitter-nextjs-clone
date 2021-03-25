@@ -24,7 +24,7 @@ function Tweet({
         <header className={style.header}>
           <span className={style.name}>{name} </span>{' '}
           <span className={style.slug}>@{screen_name}</span>{' '}
-          {/* <span>· {formatDistanceToNowStrict(new Date(created_at))}</span> */}
+          {<span>· {formatDistanceToNowStrict(new Date(created_at))}</span>}
         </header>
         <div className={style.content}>{text}</div>
         <footer className={style.footer}>

@@ -1,11 +1,9 @@
-import Head from 'next/head'
 import Layout from '../components/Layout'
 import Tweet from '../components/Tweet'
 import fetcher from '../lib/fetch'
 import useSWR from 'swr'
 import Loading from '../components/Loading'
 import style from './styles.module.css'
-import TweetBox from '../components/TweetBox'
 
 export default function Home() {
   //loading'i kullanmak için /api/tweets olarak değiştirilebilir.
