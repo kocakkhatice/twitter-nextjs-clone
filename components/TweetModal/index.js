@@ -18,7 +18,7 @@ function TweetModal({ onClick = () => {} }) {
               className={style.textarea}
               name=""
               rows="4"
-              placeholder="Ne düşünüyorsun"
+              placeholder="What do you think?"
             />
           </div>
           <Stack gap={20} className={style.footer}>

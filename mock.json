@@ -1,0 +1,50 @@
+{
+  "name": "haticekocak",
+  "tweets": [
+    {
+      "created_at": "Mon Aug 03 09:56:25 +0000 2020",
+      "text": "this is first tweet",
+      "entities": {
+        "hastags": [],
+        "symbols": [],
+        "user_mentions": []
+      }
+    },
+    {
+      "created_at": "Mon Aug 03 09:56:25 +0000 2020",
+      "text": "this is first tweet",
+      "entities": {
+        "hastags": [],
+        "symbols": [],
+        "user_mentions": []
+      }
+    },
+    {
+      "created_at": "Mon Aug 03 09:56:25 +0000 2020",
+      "text": "this is first tweet",
+      "entities": {
+        "hastags": [],
+        "symbols": [],
+        "user_mentions": []
+      }
+    },
+    {
+      "created_at": "Mon Aug 03 09:56:25 +0000 2020",
+      "text": "this is first tweet",
+      "entities": {
+        "hastags": [],
+        "symbols": [],
+        "user_mentions": []
+      }
+    },
+    {
+      "created_at": "Mon Aug 03 09:56:25 +0000 2020",
+      "text": "this is first tweet",
+      "entities": {
+        "hastags": [],
+        "symbols": [],
+        "user_mentions": []
+      }
+    }
+  ]
+}

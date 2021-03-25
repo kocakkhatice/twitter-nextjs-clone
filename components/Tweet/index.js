@@ -4,17 +4,27 @@ import style from './styles.module.css'
 import IconButton from '../Button/iconButton'
 import * as Icon from '../icons'
 import formatDistanceToNowStrict from 'date-fns/formatDistanceToNowStrict'
-function Tweet({ name, slug, datetime, text, children }) {
+function Tweet({
+  created_at,
+  retweet_count,
+  favorite_count,
+  retweeted,
+  favorited,
+  text,
+  name,
+  screen_name,
+  profile_image_url_https
+}) {
   return (
     <article className={style.tweet}>
       <div className={style.avatar}>
-        <ProfilePhoto />
+        <ProfilePhoto src={profile_image_url_https} />
       </div>
       <div className={style.body}>
         <header className={style.header}>
-          <span className={style.name}>{name}</span>
-          <span className={style.slug}>@{slug}</span>{' '}
-          <span>· {formatDistanceToNowStrict(datetime)}</span>
+          <span className={style.name}>{name} </span>{' '}
+          <span className={style.slug}>@{screen_name}</span>{' '}
+          {/* <span>· {formatDistanceToNowStrict(new Date(created_at))}</span> */}
         </header>
         <div className={style.content}>{text}</div>
         <footer className={style.footer}>
@@ -28,13 +38,13 @@ function Tweet({ name, slug, datetime, text, children }) {
             <IconButton className={style.actionButton}>
               <Icon.Retweet />
             </IconButton>
-            <span>78</span>
+            {retweet_count && <span>{retweet_count}</span>}
           </div>
           <div className={style.footerButton}>
             <IconButton className={style.actionButton}>
               <Icon.Like />
             </IconButton>
-            <span>12</span>
+            {favorite_count && <span>{favorite_count}</span>}
           </div>
           <div className={style.footerButton}>
             <IconButton className={style.actionButton}>
